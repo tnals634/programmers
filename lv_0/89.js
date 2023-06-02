@@ -1,0 +1,18 @@
+//문자열 붙여서 출력하기
+
+//아직 입력받는 코드는 정확히 이해하지는 못했다.
+const readline = require('readline');
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+let input = [];
+
+rl.on('line', function (line) {
+    input = line.split(' ');
+}).on('close', function () {
+    str1 = input[0];
+    str2 = input[1];
+    console.log(str1+=str2);
+});
