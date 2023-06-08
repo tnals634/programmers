@@ -7,8 +7,8 @@ function solution(age) {
 
   let array = [];
   for (let i = 1; age > 0; i++) {
-    array[i] = Math.floor(age % 10 ** 1);
-    age = Math.floor(age / 10 ** 1);
+    array[i] = Math.floor(age % 10);
+    age = Math.floor(age / 10);
   }
 
   for (let i = array.length - 1; i >= 0; i--) {
